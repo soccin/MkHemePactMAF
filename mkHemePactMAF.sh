@@ -37,5 +37,7 @@ OUT=Proj_$(python2.7 $SDIR/minimalTag.py $tags)___HemeMAF.txt
 echo "OUT="$OUT >&2
 
 python2.7 $SDIR/mkHemePactMAF.py $mafs >$OUT
-txt2xls $OUT 2> ELOG
+
+# Generate eXcel file if desired
+# txt2xls $OUT 2> ELOG
 
